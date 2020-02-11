@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">B nuts</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="textview">TextView</string>
+    <string name="category_a">Category A</string>
+    <string name="textview1">TextViewbleh</string>
+    <string name="category_b">Category B</string>
+    <string name="category_c">Category C</string>
+    <string name="price">Price</string>
+    <string name="increase">+</string>
+    <string name="quantity">Quantity:</string>
+    <string name="product1">Almonds</string>
+    <string name="size">123</string>
+    <string name="decrease">-</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="product2">Pista</string>
+    <string name="sr_no">SR.NO.</string>
+    <string name="product">PRODUCT</string>
+    <string name="total">Total :</string>
+    <string name="cost">COST</string>
+    <string name="quantityy">QUANTITY</string>
+    <string name="todo">TODO</string>
+    <string-array name="grams">
+        <item>100gms</item>
+        <item>200gms</item>
+        <item>300gms</item>
+    </string-array>
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

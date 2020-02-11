@@ -1,0 +1,1870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DivineFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/product1A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/almonds"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Almond"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/down1A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity1A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product1A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg1A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner1aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner1bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost1A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc1A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product2A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cashew"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Cashew W240"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down2A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity2A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product2A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg2A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner2aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner2bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost2A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc2A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product3A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cashew"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Cashew W320"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down3A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity3A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product3A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg3A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner3aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner3bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost3A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc3A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product4A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cashew"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Cashew W210"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down4A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity4A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product4A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg4A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner4aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner4bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost4A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc4A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product5A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cashew"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Cashew W210 R&amp;S"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down5A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity5A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product5A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg5A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner5aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner5bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost5A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc5A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product6A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raisin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Raisin Golden"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down6A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity6A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product6A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg6A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner6aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner6bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost6A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc6A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product7A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/figs"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Figs"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/down7A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity7A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product7A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg7A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner7aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner7bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost7A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc7A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product8A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blueberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Blueberries"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/down8A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity8A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product8A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg8A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner8aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner8bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost8A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc8A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product9A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Cranberries"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down9A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity9A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product9A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg9A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner9aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner9bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost9A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc9A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product10A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pistachio"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Pistachio R&amp;S"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/down10A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity10A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product10A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg10A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner10aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner10bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost10A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc10A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product11A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/almonds"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Almond R&amp;S"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down11A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity11A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product11A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg11A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner11aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner11bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost11A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc11A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product12A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/assberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Assorted Berries"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/down12A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity12A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product12A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg12A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner12aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner12bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost12A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc12A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product13A"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Assorted Dry Fruits"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down13A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity13A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product13A"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg13A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner13aA"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner13bA"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost13A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc13A"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

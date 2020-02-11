@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DelightFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/product1C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Dehydrated Products"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down1C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity1C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product1C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg1C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner1aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner1bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost1C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc1C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product2C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cherries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Dehydrated Jamun"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down2C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity2C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product2C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg2C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner2bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost2C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc2C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product3C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/strawberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Chocolate Date"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down3C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity3C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product3C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg3C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner3aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner3bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost3C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc3C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product4C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Pumpkin Seeds R&amp;S"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down4C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity4C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product4C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg4C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner4aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner4bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost4C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc4C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product5C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Sunflower R&amp;S"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down5C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity5C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product5C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg5C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner5aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner5bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost5C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc5C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product6C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/apricot"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Apricot Turkey"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down6C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity6C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product6C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg6C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner6aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner6bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost6C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc6C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product7C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raisin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Raisin Black"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down7C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity7C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product7C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg7C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner7aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner7bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost7C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc7C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product8C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raisin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Raisin Munakka"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down8C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity8C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product8C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg8C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner8aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner8bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost8C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc8C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product9C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Branches"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down9C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity9C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product9C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg9C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner9aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner9bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost9C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc9C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product10C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Medjool"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down10C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity10C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product10C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg10C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner10aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner10bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost10C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc10C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product11C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Ajwa"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down11C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity11C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product11C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg11C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner11aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner11bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost11C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc11C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product12C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Mabroom"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down12C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity12C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product12C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg12C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner12aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner12bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost12C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc12C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/product13C"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cranberries"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="Kalmi"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/down13C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/quantity13C"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/product13C"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pkg:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pkg13C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="100"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="gms"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner13aC"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown"-->
+                            <!--android:layout_weight="3">-->
+
+                        <!--</Spinner>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Qty:"
+                            android:textColor="#000000"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spinner13bC"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:layout_weight="2">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/cost13C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Rs100"
+                            android:textColor="#000000"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/atc13C"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/buttonshape"
+                            android:text="ADD"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

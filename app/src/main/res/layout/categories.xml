@@ -1,0 +1,2411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                app:logo="@drawable/bnuts">
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+
+                <ImageButton
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="250dp"
+                    android:onClick="cart"
+                    android:background="@drawable/cart" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabIndicatorColor="#71352c"
+            app:tabTextColor="#71352c">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DIVINE"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CLASSICS"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DELIGHT"/>
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp">-->
+
+                <!--<Button-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:onClick="goToCategoryA"-->
+                    <!--android:text="DIVINE" />-->
+
+                <!--<Button-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:onClick="goToCategoryB"-->
+                    <!--android:text="CLASSICS" />-->
+
+                <!--<Button-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:onClick="goToCategoryC"-->
+                    <!--android:text="DELIGHT" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</HorizontalScrollView>-->
+
+        <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--xmlns:tools="http://schemas.android.com/tools"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/show"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image1"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product1"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner1a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner1b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc1"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity2"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image2"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product2"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner2a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner2b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc2"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity3"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image3"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text3"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product3"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner3a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner3b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc3"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity4"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image4"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text4"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product4"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner4a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner4b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc4"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity5"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image5"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text5"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product5"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner5a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner5b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc5"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity6"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image6"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text6"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product6"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner6a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner6b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc6"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity7"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image7"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text7"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product7"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner7a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner7b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc7"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity8"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image8"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text8"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product8"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner8a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner8b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc8"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity9"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image9"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text9"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product9"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner9a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner9b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc9"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product10"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity10"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image10"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text10"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity10"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product10"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner10a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner10b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc10"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product11"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity11"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image11"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text11"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity11"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product11"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner11a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner11b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc11"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/product12"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal|center"-->
+                    <!--android:onClick="showquantity12"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image12"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text12"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="#ffffff" />-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingRight="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:background="@drawable/down" />-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--android:id="@+id/quantity12"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/product12"-->
+                    <!--app:ael_duration="500"-->
+                    <!--app:ael_expanded="false"-->
+                    <!--app:ael_interpolator="accelerate"-->
+                    <!--app:ael_orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Package:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner12a"-->
+                            <!--android:layout_width="125dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Quantity:"-->
+                            <!--android:textColor="#ffffff" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spinner12b"-->
+                            <!--android:layout_width="85dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:spinnerMode="dropdown">-->
+
+                        <!--</Spinner>-->
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@drawable/buttonshape"-->
+                            <!--android:onClick="atc12"-->
+                            <!--android:text="ADD" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product2"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity2">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name2"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text2"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginStart="60dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product2"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus2"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus2"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant2"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus2"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus2"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc2"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product3"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity3">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name3"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text3"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginStart="60dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product3"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus3"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus3"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant3"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus3"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus3"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc3"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product4"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity4">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name4"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text4"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product4"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus4"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus4"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant4"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus4"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus4"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc4"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product5"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity5">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name5"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text5"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product5"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus5"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus5"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant5"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus5"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus5"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc5"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product6"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity6">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name6"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text6"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost6"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product6"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus6"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus6"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant6"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus6"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus6"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc6"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product7"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity7">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name7"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text7"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost7"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity7"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product7"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus7"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus7"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant7"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus7"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus7"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc7"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product8"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity8">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name8"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text8"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost8"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity8"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product8"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus8"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus8"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant8"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus8"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus8"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc8"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product9"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity9">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name9"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text9"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost9"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity9"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product9"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus9"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus9"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant9"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus9"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus9"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc9"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product10"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity10">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name10"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text10"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost10"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity10"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product10"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus10"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus10"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant10"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus10"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus10"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc10"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product11"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity11">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name11"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text11"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost11"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity11"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product11"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus11"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus11"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant11"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus11"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus11"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc11"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/product12"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:onClick="showquantity12">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/name12"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/text12"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="25dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:ignore="Suspicious0dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/cost12"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="60dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+
+                <!--android:id="@+id/quantity12"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@+id/product12"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_interpolator="accelerate"-->
+                <!--app:ael_orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/quantity"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/minus12"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="90dp"-->
+                <!--android:layout_marginLeft="90dp"-->
+                <!--android:text="@string/decrease"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="minus12"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/quant12"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="130dp"-->
+                <!--android:layout_marginLeft="130dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center|center_vertical"/>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/plus12"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="180dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:text="@string/increase"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="plus12"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="220dp"-->
+                <!--android:layout_marginLeft="220dp"-->
+                <!--android:text="@string/add_to_cart"-->
+                <!--android:textSize="12sp"-->
+                <!--android:onClick="atc12"/>-->
+
+                <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
